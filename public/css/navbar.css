@@ -60,6 +60,16 @@
     transition: 0.75s ease;
 }
 
+.txt-transparent {
+    opacity: 0;
+    transition: 0.75s ease;
+}
+
+.txt-dark {
+    opacity: 1;
+    transition: 0.75s ease;
+}
+
 .bg-dark {
     background-color: #008080;
     transition: 0.75s ease;

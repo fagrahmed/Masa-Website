@@ -23,9 +23,15 @@
                 if (window.scrollY < 50) {
                     document.getElementById("nav-bar").classList.add("bg-dark");
                     document.getElementById("nav-bar").classList.remove("bg-transparent");
+                    document.getElementById("nav-bar").classList.add("txt-dark");
+                    document.getElementById("nav-bar").classList.remove("txt-transparent");
+
                 } else {
                     document.getElementById("nav-bar").classList.add("bg-transparent");
                     document.getElementById("nav-bar").classList.remove("bg-dark");
+                    document.getElementById("nav-bar").classList.add("txt-transparent");
+                    document.getElementById("nav-bar").classList.remove("txt-dark");
+                    
                 }   
             });
     </script>
