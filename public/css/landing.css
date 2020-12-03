@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+}
+
+
+/* NEW CODE */
+
+.swiper-container {
+    height: 500px;
+    width: 100%;
+    top: 50px;
+}
+
+.swiper-slide {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+#page-one {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 90vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Page TWO style */
+
+#page-two {
+    height: 65vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 75vh;
+}
+
+#page-two h3 {
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #070A40;
+}
+
+#page-two #page-two__container1 .parts {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 150px;
+    font-family: Roboto;
+}
+
+#page-two #page-two__container1 .parts .icons {
+    align-items: center;
+    margin-top: 10px;
+    height: 30px;
+}
+
+#page-two #page-two__container1 .parts h4 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #070A40;
+    margin-top: 10px;
+}
+
+#page-two #page-two__container1 .parts p {
+    font-size: 0.8rem;
+    font-weight: 10px;
+    text-decoration: none;
+    color: #808080;
+    margin-top: 5px;
+}
+
+#part1 {
+    float: left;
+    flex: 1 1 0px;
+}
+
+#part2 {
+    float: left;
+    flex: 1 1 0px;
+    margin: 0 75px;
+}
+
+#part3 {
+    float: right;
+    flex: 1 1 0px;
+}
+
+#page-two__btn {
+    position: relative;
+}
+
+
+/* OLD STUFF */
+
+
+/* PAGE TWO STYLING */
+
+
+/* #page-two {
+    height: 65vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 75vh;
+}
+
+#page-two h3 {
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #070A40;
+}
+
+#page-two #page-two__container1 .parts {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 150px;
+    font-family: Roboto;
+}
+
+#page-two #page-two__container1 .parts .icons {
+    align-items: center;
+    margin-top: 10px;
+    height: 30px;
+}
+
+#page-two #page-two__container1 .parts h4 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #070A40;
+    margin-top: 10px;
+}
+
+#page-two #page-two__container1 .parts p {
+    font-size: 0.8rem;
+    font-weight: 10px;
+    text-decoration: none;
+    color: #808080;
+    margin-top: 5px;
+}
+
+#part1 {
+    float: left;
+    flex: 1 1 0px;
+}
+
+#part2 {
+    float: left;
+    flex: 1 1 0px;
+    margin: 0 75px;
+}
+
+#part3 {
+    float: right;
+    flex: 1 1 0px;
+}
+
+#page-two__btn {
+    position: relative;
+} */
+
+
+/* PAGE THREE STYLING */
+
+
+/* #page-three {
+    background: url("../img/manspic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    display: flex;
+}
+
+#page-three__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/manspic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    height: 75vh;
+}
+
+.page-three__action-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: center;
+    color: whitesmoke;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.page-three__action-container h3 {
+    font-weight: normal;
+}
+
+.page-three__action-container h1 {
+    font-weight: bold;
+    font-size: 70px;
+    padding-top: 10px;
+    letter-spacing: 14px;
+    margin-left: 164px;
+    margin-right: 150px;
+    color: whitesmoke;
+}
+
+#btn-carousel {
+    margin-top: 20px;
+}
+
+.arrows img {
+    height: 60px;
+    transition: 0.5s ease-in-out;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+.arrows img:hover {
+    height: 70px;
+}
+
+.arrows a .leftArrow {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.arrows a .rightArrow {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+ */
+
+
+/* PAGE FOUR STYLING */
+
+
+/* #page-four .page-four__container {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: dimgray;
+    border-bottom-style: 1.5px;
+    text-align: center;
+}
+
+.page-four__container .rectangle {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    background-color: #D95455;
+}
+
+.page-four__text-box {
+    top: 100px
+}
+
+.page-four__text-box h3 {
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #070A40;
+    text-align: center;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    padding-top: 150px;
+}
+
+.page-four__text-box p {
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #070A40;
+    margin-bottom: 50px;
+} */
+
+
+/* MEDIA QUERIES */
+
+
+/* @media screen and (max-width:1024px) {
+    #page-two #page-two__container1 .parts {
+        margin: 50px 30px;
+    }
+    #part2 {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width:700px) { */
+
+
+/* PAGE ONE */
+
+
+/* #page-one {
+        justify-content: center;
+    }
+    #page-one__content {
+        left: 0;
+    }
+    #page-one__text-box h1 {
+        font-size: 1.5rem;
+    }
+    #page-one__text-box p {
+        font-size: 0.75rem;
+    } */
+
+
+/* PAGE TWO */
+
+
+/* #page-two #page-two__container1 .parts h4 {
+        font-size: 1rem;
+    }
+    #part2 {
+        margin: 0 20px;
+    } */
+
+
+/* PAGE THREE */
+
+
+/*    .page-three__action-container h1 {
+        font-size: 2rem;
+    }
+    .arrows a img {
+        height: 30px;
+    }
+    .arrows a img:hover {
+        height: 40px;
+    } */
+
+
+/* PAGE FOUR */
+
+
+/*     .page-four__text-box h3 {
+        font-size: 2rem;
+    }
+    .page-four__text-box p {
+        font-size: 1rem;
+    }
+} */

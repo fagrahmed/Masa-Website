@@ -1,0 +1,58 @@
+/* GLOBAL BUTTONS STYLING */
+
+.button {
+    display: block;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 100px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+.button:hover {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.btn-fill {
+    background-color: #d95555;
+    border: 1px solid;
+    border-color: #d95555;
+}
+
+.btn-fill:hover {
+    background-color: #DA5D5D;
+    border-color: #DA5D5D;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid;
+    border-color: white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    border-color: white;
+    color: #DA5D5D;
+    letter-spacing: 2px;
+}
+
+#arrow-drawable {
+    margin-left: 2px;
+    height: 12px;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+}

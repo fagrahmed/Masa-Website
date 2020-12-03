@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 200;
+}
+
+.logo-container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 1;
+    margin-left: 0px;
+}
+
+.nav-bar {
+    list-style: none;
+    font-family: Roboto;
+    transition: 0.5s ease-in-out;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+.nav-bar li {
+    display: inline;
+    margin: 0 20px 0 20px;
+}
+
+.nav-bar li a {
+    font-size: medium;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-bar li a:hover {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.bg-transparent {
+    background: transparent !important;
+    transition: 0.75s ease;
+}
+
+.bg-dark {
+    background-color: #008080;
+    transition: 0.75s ease;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.nav-open__overlay {
+    background: rgba(117, 118, 131, 0.637);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 1;
+    z-index: 1999;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1024px) {
+    .head {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        overflow-x: hidden;
+    }
+    .head {
+        justify-content: center;
+    }
+    .nav-bar {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        height: 100vh;
+        align-items: flex-start;
+        width: 50%;
+        background-color: #008080;
+        transform: translateX(100%);
+        z-index: 2000;
+        opacity: 0;
+    }
+    .nav-bar li {
+        margin: 50px auto;
+    }
+    .nav-bar li a {
+        color: #008080;
+    }
+    .hamburger {
+        position: relative;
+        display: inline;
+        left: 33%;
+    }
+}
+
+.nav-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.nav-open__overlay-active {
+    display: block;
+}
