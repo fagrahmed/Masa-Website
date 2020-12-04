@@ -7,25 +7,11 @@
 }
 
 body {
-    background-color: #FFF;
+    background-color: #ccc;
 }
 
 
 /* NEW CODE */
-
-.swiper-container {
-    height: 500px;
-    width: 100%;
-    top: 50px;
-}
-
-.swiper-slide {
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-}
 
 #page-one {
     background-repeat: no-repeat;
@@ -37,6 +23,23 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.swiper-container {
+    height: 500px;
+    width: 100%;
+    top: 50px;
+    border-radius: 10px;
+    border-color: #808080;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
 }
 
 @keyframes fadeIn {

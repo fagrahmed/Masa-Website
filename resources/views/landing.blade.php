@@ -23,10 +23,15 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+                <div class="swiper-slide"> Slide 1
+                    <img src="img/1.jpg" alt="pic 1">
+                </div>
+                <div class="swiper-slide">Slide 2
+                    <img src="img/2.jpg" alt="pic 2">
+                </div>
+                <div class="swiper-slide" >Slide 3
+                    <img src="img/3.jpg" alt="pic 3">
+                </div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -61,6 +66,7 @@
                     <p data-aos="fade-in">hopefully i wrote it correctly</p>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -69,6 +75,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
                 var mySwiper = new Swiper('.swiper-container', {
+                
                 // Optional parameters
                 //direction: 'horizontal',
                 //loop: true,
@@ -88,7 +95,18 @@
                 scrollbar: {
                     el: '.swiper-scrollbar',
                 },
-                })
+                autoplay: {
+                    delay: 3000,
+                },
+                /*var counter = 1;
+                 setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter>4){
+                        counter = 1;
+                    }
+                }, 5000); */
+                });
     </script>  
 
     <!-- AOS script -->
