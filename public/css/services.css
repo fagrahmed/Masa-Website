@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page-two h3 {
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #070A40;
+}
+
+#page-two #icon-container .parts {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px;
+    font-family: Roboto;
+}
+
+#page-two #icon-container .parts .icons {
+    align-items: center;
+    height: 25vh;
+    width: 25vh;
+    margin: 0 50px;
+    justify-content: space-evenly;
+}
+
+#page-two #icon-container .parts h4 {
+    font-size: 1rem;
+    font-weight: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#page-two #icon-container .parts p {
+    font-size: 0.8rem;
+    font-weight: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#part1 {
+    float: left;
+    flex: 1 1 0px;
+}
+
+#part2 {
+    float: left;
+    flex: 1 1 0px;
+    /* margin: 0 20px 0; */
+}
+
+#part3 {
+    float: left;
+    flex: 1 1 0px;
+    /* margin: 0 20px 0; */
+}
+
+#part4 {
+    float: right;
+    flex: 1 1 0px;
+    /*  margin-right: 50px; */
+}
+
+#page-two__btn {
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .icons {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
