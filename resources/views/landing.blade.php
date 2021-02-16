@@ -17,6 +17,7 @@
     <header >
         @include('components.nav-bar')
     </header>
+
     
     <div id="page-one" >
         <div class="swiper-container">
